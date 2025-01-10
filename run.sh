@@ -8,6 +8,6 @@ echo '```'
 echo "### こたえ"
 echo '```'
 echo $ cargo --quiet run --example q${QNUM}
-cargo --quiet run --example q${QNUM}
+cargo --quiet run --example q${QNUM} 2>&1
 echo '```'
 echo "### 解説"

@@ -1,6 +1,10 @@
+use std::any::type_name_of_val;
+
 fn main() {
-    let mut a = 3;
-    let mut b = 5;
+    let mut a = 3u8;
+    let mut b = 5u8;
+    println!("a: {}", type_name_of_val(&a));
+    println!("b: {}", type_name_of_val(&b));
     let a = &mut a;
     let b = &mut b;
     println!("(a, b) @ ({a:p}, {b:p}) = ({a:?}, {b:?})");
